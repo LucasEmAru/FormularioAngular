@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-grid{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#barras{
+    display: none;
+}
+
+.cabecalho{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header{
+    background-color: #1E1C21;
+    height: 100px;
+    padding-top: 20px;
+}
+.icone-menu{
+    height: 40px;
+
+}
+.menu{
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu a{
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Roboto";
+}
+.banner {
+    height: 607px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.banner-f1{
+    background-image: url(../src/Imagens/banner_pilotos.png);
+}
+.banner-cs{
+    background-image: url(../src/Imagens/banner_cs.png);
+}
+.banner-lol{
+    background-image: url(../src/Imagens/banner_lol.png);
+}
+.conteudo-banner h1{
+    color: aliceblue;
+    font-family: "Titillium Web";
+    font-size: 80px;
+}
+
+.conteudo-banner p{
+    color: aliceblue;
+    font-family: "Roboto";
+    font-size: 25px;
+}
+
+.conteudo-banner a{
+    padding: 15px;
+    background-color: #c31616;
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Roboto";
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.conteudo-banner{
+    width: 497;
+    height: 237;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.posicionamento-banner{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.jogos{
+    background-color: black;
+    height: 120px;
+}
+
+.posicionamento-jogos{
+    height: 100%;
+}
+
+.container{
+    max-width: 1200px;
+}
+
+
+@media screen and (max-width: 1200px){
+    .container-grid{
+        width: 1000px;
+    }
+    .menu{
+        display: "flex";
+    }
+
+}
+
+@media screen and (max-width: 1000px){
+    .container-grid{
+        width: 800px;
+    }
+
+    #barras{
+        display: inline-block;
+    }
+
+    .cabecalho{
+        position: relative;
+    }
+
+     .menu{
+        display: none;
+        position: absolute;
+        top: 91px;
+        right: 0px;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        background-color: #1E1C21;
+        height: 300px;
+    }
+
+     .menu a{
+        font-size: 20px;
+    }
+    .menu-ativo{
+        display: flex;
+    }
+    
+
+}
