@@ -1,12 +1,26 @@
-<form #userForm="ngForm" (ngSubmit)="OnSubmit()">
-    <label for="Email">Email</label>
-    <input type="Email" id="Email" [(ngModel)]="userModel.email">
+<a routerLink="/home" id="Voltar-home">
+    <a href="#"><img src="../Imagens/icons8-esquerda-80.png" alt=""></a>
+    Voltar para Principal
+</a>
 
-    <label for="Senha">Senha</label>
-    <input type="password" id="Senha" [(ngModel)]="userModel.senha">
 
-    <button type="subimt">Enviar</button>
+<div>
+    <form #userForm="ngForm" (ngSubmit)="OnSubmit()">
+       <label for="Email">Email</label>
+       <input type="Email" id="Email" [(ngModel)]="userModel.email">
 
-</form>
+       <label for="Senha">Senha</label>
+       <input type="password" id="Senha" [(ngModel)]="userModel.senha">
 
-<a routerLink="/contato">Contato</a>
+       <button type="subimt">Enviar</button>
+    </form>
+
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault"></label>
+        Manter conectado!
+    </div>
+    
+    <button type="submit" id="btn-enviar" >Enviar</button>
+
+</div>
